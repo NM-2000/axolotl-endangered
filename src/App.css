@@ -10,6 +10,9 @@ html, head, body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-position: center;
+    background-size: cover;
+    background-color: rgb(236, 235, 235);
 }
 
 .content {
@@ -42,14 +45,74 @@ html, head, body {
     margin-right: 48px;
     box-shadow: 4px 4px;
     overflow: hidden;
+    user-select: none;
 }
 
 .fact {
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 32px;
+    padding-right: 32px;
 }
 
 .fact p {
     text-align: center;
     font-family: 'Spartan', sans-serif;
+    font-size: 22px;
+    cursor: unset;
+    user-select: none;
+}
+
+.img-left-button {
+    border-radius: 50%;
+    box-shadow: 2px 0px;
+    padding: 8px;
+    background-color: whitesmoke;
+    font-size: 16px;
+    cursor: pointer;
+    border-color: black;
+    font-family: 'Spartan', sans-serif;
+    font-weight: bold;
+    user-select: none;
+}
+
+.img-right-button {
+    border-radius: 50%;
+    box-shadow: -2px 0px;
+    padding: 8px;
+    background-color: whitesmoke;
+    font-size: 16px;
+    cursor: pointer;
+    border-color: black;
+    font-family: 'Spartan', sans-serif;
+    font-weight: bold;
+    user-select: none;
+}
+
+.img-left-button:active {
+    box-shadow: 0px 0px;
+}
+
+.img-right-button:active {
+    box-shadow: 0px 0px;
+}
+
+.fact-left-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: 'Spartan', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: blue;
+    user-select: none;
+}
+
+.fact-right-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: 'Spartan', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: blue;
+    user-select: none;
 }

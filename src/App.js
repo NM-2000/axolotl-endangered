@@ -33,16 +33,16 @@ class App extends React.Component {
             <div className="background" >
                 <div className="content" >
                     <div className="image-container" >
-                        <p>{"<<"}</p>
+                        <button className="img-left-button" >{"<<"}</button>
                         <img src={ url } className="img" />
-                        <p>{">>"}</p>
+                        <button className="img-right-button" >{">>"}</button>
                     </div>
                     <div className="fact-container" >
-                        <p>{"<"}</p>
+                        <button className="fact-left-button" >{"Previous"}</button>
                         <div className="fact" >
                             <p>{ fact }</p>
                         </div>
-                        <p>{">"}</p>
+                        <button className="fact-right-button" >{"Next"}</button>
                     </div>
                 </div>
             </div>
