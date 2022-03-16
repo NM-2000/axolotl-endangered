@@ -1,6 +1,7 @@
 import React, { memo } from 'react';
 import axios from 'axios';
 import { API_END_POINT } from './Constants';
+import './App.css';
 
 class App extends React.Component {
 
@@ -29,9 +30,21 @@ class App extends React.Component {
     render() {
         const { url, fact } = this.state;
         return (
-            <div>
-                <img src={ url } />
-                <h1>{ fact }</h1>
+            <div className="background" >
+                <div className="content" >
+                    <div className="image-container" >
+                        <p>{"<<"}</p>
+                        <img src={ url } className="img" />
+                        <p>{">>"}</p>
+                    </div>
+                    <div className="fact-container" >
+                        <p>{"<"}</p>
+                        <div className="fact" >
+                            <p>{ fact }</p>
+                        </div>
+                        <p>{">"}</p>
+                    </div>
+                </div>
             </div>
         );
     };
