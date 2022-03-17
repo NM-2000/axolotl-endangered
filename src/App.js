@@ -97,7 +97,7 @@ class App extends React.Component {
                     <div className="image-container" >
                         <button className={!this.isLeftButtonDisabled() ? "img-left-button" : "img-left-button disabled"} onClick={this.onLeftButtonClick} disabled={this.isLeftButtonDisabled()} >{"<<"}</button>
                         <div className="img-div" >
-                            <img src={ url } className="img" />
+                            <img src={ url } alt="" className="img" />
                         </div>
                         <button className={!this.isRightButtonDisabled() ? "img-right-button" : "img-right-button disabled"} onClick={this.onRightButtonClick} disabled={this.isRightButtonDisabled()} >{">>"}</button>
                     </div>
